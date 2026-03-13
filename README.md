@@ -16,7 +16,11 @@ Hands-on Jupyter notebook training for data visualisation with Python, starting 
 ## Setup
 
 ### Prerequisites
-- Python 3.11+
+- [Python 3.11+](https://www.python.org/downloads/)
+- [VS Code](https://code.visualstudio.com/)
+- VS Code extensions:
+  - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+  - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 
 ### 1. Create and activate a virtual environment
 
@@ -38,15 +42,9 @@ pip install -r requirements.txt
 python -m ipykernel install --user --name technodays_data_vis --display-name "technodays_data_vis"
 ```
 
-### 4. Launch Jupyter
+### 4. Open the notebook in VS Code
 
-```bash
-jupyter notebook
-```
-
-Then open `networkx.ipynb` in your browser, and select the **technodays_data_vis** kernel from the *Kernel → Change kernel* menu.
-
-> **VS Code users:** Open `networkx.ipynb` directly in VS Code, click *Select Kernel* in the top-right corner, and choose **technodays_data_vis** from the list.
+Open `networkx.ipynb` in VS Code, click **Select Kernel** in the top-right corner, and choose **technodays_data_vis** from the list.
 
 ---
 
