@@ -17,12 +17,13 @@ Hands-on Jupyter notebook training for data visualisation with Python, starting 
 
 ### Prerequisites
 - Python 3.11+
-- The virtual environment has already been created at `/Users/toddcook/python_stuff/envs/technodays_data_vis/`
 
-### 1. Activate the virtual environment
+### 1. Create and activate a virtual environment
 
 ```bash
-source /Users/toddcook/python_stuff/envs/technodays_data_vis/bin/activate
+python -m venv .venv
+source .venv/bin/activate        # macOS / Linux
+.venv\Scripts\activate           # Windows
 ```
 
 ### 2. Install dependencies
