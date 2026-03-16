@@ -72,3 +72,4 @@ Full solution to the exercise using real CORDIS data from the Clean Energy clust
 - Builds a collaboration graph (nodes = orgs, edges = shared projects)
 - Visualises with edge width, node size, and node colour by country
 - Runs community detection and centrality analysis on the top 60 most-connected organisations
+- Interactive visualisation with **PyVis** — outputs a standalone HTML file (`cordis_network_interactive.html`) with hover tooltips, drag-to-rearrange, and zoom; embeddable on any website via `<iframe>`
