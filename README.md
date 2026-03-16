@@ -11,7 +11,6 @@ Hands-on Jupyter notebook training for data visualisation with Python, using **N
 | `networkx.ipynb` | Training notebook — small worked example then a hands-on exercise |
 | `cordis_networkx.ipynb` | Reference solution — full CORDIS collaboration network |
 | `cordis_orgs.csv` | CORDIS organisation participation data (one row per org per project) |
-| `cordis-HORIZONprojects-xlsx/` | Raw CORDIS Horizon Europe export files |
 | `requirements.txt` | Python package dependencies |
 
 ---
