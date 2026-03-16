@@ -1,6 +1,6 @@
 # Technodays 2026 — Data Visualisation Training
 
-Hands-on Jupyter notebook training for data visualisation with Python, starting with **NetworkX** for network/graph analysis.
+Hands-on Jupyter notebook training for data visualisation with Python, using **NetworkX** for network/graph analysis applied to real EU research collaboration data from [CORDIS](https://cordis.europa.eu/).
 
 ---
 
@@ -8,7 +8,10 @@ Hands-on Jupyter notebook training for data visualisation with Python, starting 
 
 | File | Description |
 |---|---|
-| `networkx.ipynb` | Comprehensive NetworkX training notebook |
+| `networkx.ipynb` | Training notebook — small worked example then a hands-on exercise |
+| `cordis_networkx.ipynb` | Reference solution — full CORDIS collaboration network |
+| `cordis_orgs.csv` | CORDIS organisation participation data (one row per org per project) |
+| `cordis-HORIZONprojects-xlsx/` | Raw CORDIS Horizon Europe export files |
 | `requirements.txt` | Python package dependencies |
 
 ---
@@ -48,18 +51,25 @@ Open `networkx.ipynb` in VS Code, click **Select Kernel** in the top-right corne
 
 ---
 
-## NetworkX Notebook — Topics Covered
+## Notebooks
 
-1. What is NetworkX?
-2. Graph types (`Graph`, `DiGraph`, `MultiGraph`)
-3. Adding nodes and edges
-4. Node and edge attributes
-5. Visualising graphs (layouts, custom styling)
-6. Graph properties and inspection
-7. Paths and connectivity algorithms
-8. Centrality measures (degree, betweenness, PageRank, …)
-9. Clustering coefficients and community detection
-10. Classic graph generators (Erdős–Rényi, Barabási–Albert, Watts–Strogatz, …)
-11. Building graphs from real-world data (pandas DataFrames)
-12. Directed graphs and DAGs
-13. Saving and loading graphs (GraphML, JSON, NumPy)
+### `networkx.ipynb` — Training Notebook
+
+Work through a small made-up dataset (6 orgs, 5 projects) to learn the core NetworkX workflow, then attempt the **Your Turn** exercise using real CORDIS data.
+
+1. Small example dataset
+2. Basic network graph
+3. Styled visualisation — edge width, node size, node colour
+4. Community detection (Greedy Modularity)
+5. Centrality analysis (degree, betweenness, eigenvector, PageRank)
+6. **Your Turn** — replicate the above with `cordis_orgs.csv`, filtered to `masterCall == 'HORIZON-CL5-2022-D2-01'`
+
+### `cordis_networkx.ipynb` — Reference Solution
+
+Full solution to the exercise using real CORDIS data from the Clean Energy cluster (Horizon Europe 2022).
+
+- Filters to `masterCall == 'HORIZON-CL5-2022-D2-01'`
+- Extracts country codes from VAT number prefixes
+- Builds a collaboration graph (nodes = orgs, edges = shared projects)
+- Visualises with edge width, node size, and node colour by country
+- Runs community detection and centrality analysis on the top 60 most-connected organisations
