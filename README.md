@@ -9,8 +9,10 @@ Hands-on Jupyter notebook training for data visualisation with Python, using **N
 | File | Description |
 |---|---|
 | `networkx.ipynb` | Training notebook — small worked example then a hands-on exercise |
-| `cordis_networkx.ipynb` | Reference solution — full CORDIS collaboration network |
+| `networkx_cordis_solution.ipynb` | Reference solution — full CORDIS collaboration network |
 | `cordis_orgs.csv` | CORDIS organisation participation data (one row per org per project) |
+| `template/` | TG house style — colours, fonts, matplotlib/plotly configuration |
+| `logger.py` | Standard logging configuration |
 | `requirements.txt` | Python package dependencies |
 
 ---
@@ -63,7 +65,7 @@ Work through a small made-up dataset (6 orgs, 5 projects) to learn the core Netw
 5. Centrality analysis (degree, betweenness, eigenvector, PageRank)
 6. **Your Turn** — replicate the above with `cordis_orgs.csv`, filtered to `masterCall == 'HORIZON-CL5-2022-D2-01'`
 
-### `cordis_networkx.ipynb` — Reference Solution
+### `networkx_cordis_solution.ipynb` — Reference Solution
 
 Full solution to the exercise using real CORDIS data from the Clean Energy cluster (Horizon Europe 2022).
 
