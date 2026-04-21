@@ -13,7 +13,7 @@ Hands-on Jupyter notebook training for data visualisation with Python, using rea
 | `geopandas/geopandas.ipynb` | GeoPandas training notebook — UK regions choropleth then a hands-on exercise |
 | `geopandas/geopandas_cordis_solution.ipynb` | GeoPandas reference solution — CORDIS funding mapped across Europe |
 | `assets/cordis_orgs.csv` | CORDIS organisation participation data (one row per org per project) |
-| `assets/UK_counties/` | UK regions shapefile |
+| `assets/UK_regions/` | UK regions shapefile |
 | `assets/europe_countries/` | Europe countries shapefile |
 | `template/` | TG house style — colours, fonts, matplotlib/plotly configuration |
 | `requirements.txt` | Python package dependencies |
